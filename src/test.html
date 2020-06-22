@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show() {
+            console.log(this);
+        }
+    </script>
+</head>
+<body>
+    <span id="x" >xxx</span>
+    <script>
+        let oSpan = document.getElementById("x");
+        oSpan.onclick = show;
+        // oSpan.addEventListener("click", function(){
+        //     console.log(this);
+        // });
+        
+    </script>
+</body>
+</html>
